@@ -1,0 +1,71 @@
+html, body{
+    margin: 0;
+    font-fammily: 'Poppins';
+    font-size: 16px;
+}
+
+main{
+    padding: 1rem 4rem;
+
+}
+.navbar{
+    background-color: darkslategray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+.navbar input, .nav-menu{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu{
+    position: absolute;
+    background-color: darkslategray;
+    top: 48px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+.nav-item a:hover{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+}
